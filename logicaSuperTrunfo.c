@@ -52,4 +52,67 @@ printf("A Densidade Populacional é: %f hab/km² \n", densidade2);
 printf("O PIB per Capita é: 407977.47 reais \n");
 printf("O Super Poder é: %2.f \n", super2);
 
+printf("\n");
+
+printf("Comparação da população\n");
+
+
+if (populacao > populacao2){
+    printf("Carta 1 venceu\n");
+} else {
+    printf("Carta 2 venceu\n");
+}
+
+printf("Comparação da Área\n");
+
+if (area > area2){
+    printf("Carta 1 venceu\n");
+} else {
+    printf("Carta 2 venceu\n");
+}
+
+printf("Comparação do PIB\n");
+
+if (PIB > PIB2){
+    printf("Carta 1 venceu\n");
+} else {
+    printf("Carta 2 venceu\n");
+}
+
+printf("Comparação do Número de Pontos Turistícos\n");
+
+if (Turismo > turismo2){
+    printf("Carta 1 venceu\n");
+} else {
+    printf("Carta 2 venceu\n");
+}
+
+printf("Comparação da Densidade Populacional\n");
+
+if (densidade < densidade2){
+    printf("Carta 1 venceu\n");
+} else {
+    printf("Carta 2 venceu\n");
+}
+
+printf("Comparação do PIB Per Capita\n");
+
+if (densidade > densidade2){
+    printf("Carta 1 venceu\n");
+} else {
+    printf("Carta 2 venceu\n");
+}
+
+printf("Comparação do Super Poder\n");
+
+if (super > super2){
+    printf("Carta 1 venceu\n");
+} else {
+    printf("Carta 2 venceu\n");
+}
+
+printf("\n");
+
+printf("A cidade vencedora é Salvador\n");
+
 }
