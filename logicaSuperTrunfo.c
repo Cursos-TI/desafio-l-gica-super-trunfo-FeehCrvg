@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(){
-
-printf("Desafio Super Trunfo: Nível novato \n");
-
-printf("\n");
-
+ 
+int Regra;
+int Atributo;
+int Opção;
 int populacao = 62000000;
 float area = 1480.886;
 float densidade = 1 / 41886.83 ;
@@ -16,6 +17,18 @@ float PIB = 190.84;
 int Turismo = 50;
 float per = 324879.50;
 float super = (float) populacao + area + PIB + per + densidade;
+int populacao2 = 94100000;
+float area2 = 5640.830;
+float PIB2 = 230.65;
+float densidade2 = 1 / 16681.94;
+float per2 = 407977.47;
+int turismo2 = 63;
+float super2 = (float) populacao2 + area2 + PIB2 + per2 + densidade2;
+
+printf("Super Trunfo \n");
+
+printf("\n");
+
 
 printf("Carta 1 \n");
 
@@ -32,13 +45,6 @@ printf("O Super Poder é: %2.f \n", super);
 
 printf("\n");
 
-int populacao2 = 94100000;
-float area2 = 5640.830;
-float PIB2 = 230.65;
-float densidade2 = 1 / 16681.94;
-float per2 = 407977.47;
-int turismo2 = 63;
-float super2 = (float) populacao2 + area2 + PIB2 + per2 + densidade2;
 
 printf("Carta 2 \n");
 printf("O Estado é: Bahia \n");
@@ -54,65 +60,104 @@ printf("O Super Poder é: %2.f \n", super2);
 
 printf("\n");
 
-printf("Comparação da população\n");
 
+
+printf("Super Trunfo \n");
+printf("Escolha uma opção:\n");
+printf("1. População\n");
+printf("2. Área\n");
+printf("3. PIB\n");
+printf("4. Turismo\n");
+printf("5. Densidade\n");
+printf("6. PIB per Capita\n");
+printf("7. Densidade\n");
+printf("8. Super poder\n");
+printf("Escolha: ");
+scanf("%d", & Opção);
+
+switch (Opção)
+{
+case 1:
+printf("Escolha seu Atributo: ");
+scanf("%d", &Atributo);
 
 if (populacao > populacao2){
-    printf("Carta 1 venceu\n");
-} else {
+     printf("Carta 1 venceu\n");
+} else if (populacao < populacao2){
     printf("Carta 2 venceu\n");
+} else {
+    printf("Houve um empate!\n");
 }
+break;
 
-printf("Comparação da Área\n");
-
+case 2:
 if (area > area2){
     printf("Carta 1 venceu\n");
-} else {
+} else if (area < area2){
     printf("Carta 2 venceu\n");
+} else {
+    printf("Houve um empate!\n");
 }
+break;
 
-printf("Comparação do PIB\n");
-
+case 3:
 if (PIB > PIB2){
     printf("Carta 1 venceu\n");
-} else {
+} else if (PIB < PIB2){
     printf("Carta 2 venceu\n");
+} else {
+    printf("Houve um empate!\n");
 }
+break;
 
-printf("Comparação do Número de Pontos Turistícos\n");
-
+case 4:
 if (Turismo > turismo2){
     printf("Carta 1 venceu\n");
-} else {
+} else if (Turismo < turismo2){
     printf("Carta 2 venceu\n");
+} else {
+    printf("Houve um empate!\n");
 }
+break;
 
-printf("Comparação da Densidade Populacional\n");
-
+case 5:
 if (densidade < densidade2){
-    printf("Carta 1 venceu\n");
-} else {
+     printf("Carta 1 venceu\n");
+} else if (densidade > densidade2){
     printf("Carta 2 venceu\n");
+} else {
+    printf("Houve um empate!\n");
 }
+break;
 
-printf("Comparação do PIB Per Capita\n");
-
+case 6:
 if (per > per2){
     printf("Carta 1 venceu\n");
-} else {
+} else if (per < per2){
     printf("Carta 2 venceu\n");
-}
+} else {
+    printf("Houve um empate!\n");
+} 
+break;
 
-printf("Comparação do Super Poder\n");
-
+case 7:
 if (super > super2){
     printf("Carta 1 venceu\n");
-} else {
+} else if (super < super2){
     printf("Carta 2 venceu\n");
-}
-
-printf("\n");
-
-printf("A cidade vencedora é Salvador\n");
+} else {
+    printf("Houve um empate!\n");
+} 
 
 }
+
+return 0;
+}
+
+
+
+    
+   
+
+    
+
