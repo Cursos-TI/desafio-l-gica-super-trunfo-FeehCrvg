@@ -76,9 +76,6 @@ scanf("%d", & Opção);
 switch (Opção)
 {
 case 1:
-printf("Escolha seu Atributo: ");
-scanf("%d", &Atributo);
-
 if (populacao > populacao2){
      printf("Carta 1 venceu\n");
 } else if (populacao < populacao2){
