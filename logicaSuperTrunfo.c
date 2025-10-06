@@ -4,8 +4,6 @@
 
 int main(){
  
-int Regra;
-int Atributo;
 int Opção;
 int populacao = 62000000;
 float area = 1480.886;
@@ -153,6 +151,13 @@ if (super > super2){
 
 return 0;
 }
+
+
+
+    
+   
+
+    
 
 
 
