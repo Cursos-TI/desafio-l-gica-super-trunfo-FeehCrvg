@@ -68,8 +68,7 @@ printf("3. PIB\n");
 printf("4. Turismo\n");
 printf("5. Densidade\n");
 printf("6. PIB per Capita\n");
-printf("7. Densidade\n");
-printf("8. Super poder\n");
+printf("7. Super poder\n");
 printf("Escolha: ");
 scanf("%d", & Opção);
 
